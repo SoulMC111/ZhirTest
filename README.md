@@ -1,9 +1,9 @@
-# EaglerCraftX Server
+# EaglerCraftX Server [![YouTube](https://img.shields.io/youtube/channel/subscribers/UCUWJjObxzzcbwi8k9NMSqCg?style=flat-square&label=Subscribers)](https://www.youtube.com/@P3zrrfortech?sub_confirmation=1)
+> [!IMPORTANT]
+> Follow the step by step to use make server with EaglercraftX.
 
 ## Credits
-Original Project: Lax1Dude
-<br>
-Original Server Fork: EcoliEater87
+Original Project: P3zrr-Studio
 <br>
 ## Setup Guide
 Welcome to the EaglercraftX server project! Here is how you can setup your very own eaglercraft server:
