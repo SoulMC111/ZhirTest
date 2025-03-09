@@ -1,15 +1,15 @@
 {
      "ender-chest": [],
      "stats": {
-          "saturation": 0,
+          "saturation": 3,
           "potion-effects": "",
-          "can-fly": false,
+          "can-fly": true,
           "level": 8,
-          "flying": false,
-          "exhaustion": 3.6687862873077393,
+          "flying": true,
+          "exhaustion": 0.9242989420890808,
           "health": 20,
           "exp": 0.5217393040657043,
-          "food": 19
+          "food": 20
      },
      "inventory": {
           "armor": [
@@ -42,20 +42,29 @@
                {
                     "amount": 1,
                     "data": 0,
+                    "name": "§6§lMidas' §6§lSword",
                     "index": 0,
+                    "id": 283
+               },
+               {
+                    "amount": 1,
+                    "data": 4,
+                    "name": "§1§lSoul Sword",
+                    "index": 1,
                     "id": 276
                },
                {
-                    "amount": 3,
-                    "data": 0,
-                    "index": 1,
+                    "amount": 59,
+                    "data": 1,
+                    "index": 2,
                     "id": 322
                },
                {
-                    "amount": 64,
-                    "data": 0,
-                    "index": 2,
-                    "id": 364
+                    "amount": 1,
+                    "data": 2,
+                    "name": "§1§lSoul Sword",
+                    "index": 3,
+                    "id": 276
                }
           ]
      }

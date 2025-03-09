@@ -52,8 +52,8 @@ on join:
 command /socials:
     trigger:
         send "&4&l>>>--Socials--<<<" to player
-        send "&cYT: &fhttps://www.youtube.com/@ItzMeUnreal" to player
-        send "&bDiscord: &fhttps://discord.gg/MSPTRkVYAE" to player
+        send "&cYT: <link:https://www.youtube.com/@ItzMeUnreal>Click for youtube!!<reset>" to player
+        send "&bDiscord: <link:https://discord.gg/MSPTRkVYAE>Click for discord!<reset>" to player
         send "&4&l>>>--Socials--<<<" to player
 
 command /fc:
@@ -63,4 +63,10 @@ command /fc:
             send "%{_fc}%" to player
 
 every 12000 ticks:
-    send "&b[!] Tip: Join the discord at discord.gg/MSPTRkVYAE" to all players
+    send "&b[!] Tip: Join the discord at <link:discord.gg/MSPTRkVYAE>discord.gg/MSPTRkVYAE<reset>" to all players
+
+
+command /hover:
+    trigger:
+        send "<tooltip:&eThis is a hover message>This is cool<reset>" to player
+

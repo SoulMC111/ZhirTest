@@ -43,6 +43,7 @@ mana::firezonefrfr, long, 0000000000000064
 mana::itzmeunreal, long, 0000000000000064
 mana::notace, long, 0000000000000064
 mana::steve, long, 0000000000000064
+mana::tubers_, long, 0000000000000064
 mana::yeeishyeeish3823, long, 0000000000000064
 match, boolean, 01
 match_running, boolean, 00
@@ -54,5 +55,3 @@ players_needed, long, 0000000000000002
 queue, long, 0000000000000000
 range::*, long, 0000000000000005
 
-cooldown::ace1ace4767, null, 
-cooldownexplode::ace1ace4767, null, 

@@ -9,7 +9,7 @@ logoutlocation:
   pitch: 52.34999
 timestamps:
   logout: 1741455021267
-  login: 1741460873543
+  login: 1741528093483
   kits:
     diamond: 1741458276755
     dtools: 1741457997798
@@ -17,11 +17,11 @@ timestamps:
 lastAccountName: Ace1Ace4767
 ipAddress: 0:0:0:0:0:0:0:1
 lastlocation:
-  world: hub
-  x: -86.26056488470276
-  y: 20.154968881999757
-  z: -12.570892914572408
-  yaw: -74.81166
-  pitch: 50.999973
+  world: br
+  x: 13.823069952453826
+  y: 83.0
+  z: -6.918997324489839
+  yaw: 246.59991
+  pitch: 10.350027
 afk: false
-socialspy: true
+socialspy: false

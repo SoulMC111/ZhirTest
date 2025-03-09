@@ -1,7 +1,8 @@
 command /custom:
     trigger:
-        give player gold sword named "&6&lMidas' &6&lSword"
-        give player diamond sword named "&1&lSoul Sword"
+        give player 1 of unbreakable gold sword named "&6&lMidas' &6&lSword"
+        give player 1 of unbreakable diamond sword named "&1&lSoul Sword"
+
 
 on death of a living entity:
     if attacker is a player:
