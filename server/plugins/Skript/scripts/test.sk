@@ -1,0 +1,7 @@
+command /bonk:
+    trigger:
+        set {_gui} to chest inventory with 6 rows named "Test"
+        
+        set slot 0 of {_gui} to iron helmet named "yes"
+            
+        open {_gui} to player

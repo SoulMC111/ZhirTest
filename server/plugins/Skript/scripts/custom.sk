@@ -1,0 +1,34 @@
+command /custom:
+    trigger:
+        give player gold sword named "&6&lMidas' &6&lSword"
+        give player diamond sword named "&1&lSoul Sword"
+
+on death of a living entity:
+    if attacker is a player:
+        if attacker's tool is a gold sword named "&6&lMidas' &6&lSword":
+            set {_chance} to random number between 1 and 100
+            if {_chance} is less than or equal to 35:
+                drop 1 enchanted golden apple named "&6Soul Fragment" at victim's location
+                send "&7You have claimed a &6Soul Fragment&7!" to attacker
+
+
+on damage:
+    if attacker is a player:
+        if attacker's tool is diamond sword named "&1&lSoul Sword":
+            if victim is a player:
+                if {freeze::%victim%} is set:  # Prevents re-freezing
+                    stop
+                set {freeze::%victim%} to true
+                send "&1Your soul has been extracted!" to victim
+                send "&1You have stolen &1%victim%'s &1soul!" to attacker
+                set attacker's health to 10
+                
+                apply slowness 10 to victim for 10 seconds
+                
+                loop 10 times:
+                    if {freeze::%victim%} is not set:  # If unfrozen, stop looping
+                        stop loop
+                    wait 1 second
+                
+                delete {freeze::%victim%}  # Remove freeze effect
+                send "&aYou are no longer frozen!" to victim

@@ -1,0 +1,20 @@
+lastAccountName: AES_85
+timestamps:
+  login: 1741439740293
+  logout: 1741440381682
+ipAddress: 0:0:0:0:0:0:0:1
+lastlocation:
+  world: hub
+  x: -42.45128343200125
+  y: 6.0
+  z: -30.096409771346483
+  yaw: 186.15002
+  pitch: 23.400002
+logoutlocation:
+  world: survival
+  x: -8.300000011920929
+  y: 139.0
+  z: 5.941874569410248
+  yaw: -38.24987
+  pitch: -10.50001
+afk: false

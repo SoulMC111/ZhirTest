@@ -1,0 +1,12 @@
+command /gui:
+    trigger:
+        set metadata tag "gui" of player to chest inventory with 3 rows named "cool"
+        set slot 13 of metadata tag "gui" of player to diamond named "&3Diamond"
+        open (metadata tag "gui" of player) to player
+
+on inventory click:
+    if event-inventory = (metadata tag "gui" of player):
+        if index of event-slot is 13:
+            cancel event
+            if index of event-slot is 13:
+                give player 1 diamond

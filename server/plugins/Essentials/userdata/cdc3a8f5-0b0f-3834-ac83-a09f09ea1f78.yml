@@ -1,0 +1,20 @@
+lastAccountName: Convex_Bot
+timestamps:
+  login: 1741434351191
+  logout: 1741434894690
+ipAddress: 0:0:0:0:0:0:0:1
+lastlocation:
+  world: testing
+  x: -18.69999998807907
+  y: 61.0
+  z: 2.343915877553242
+  yaw: -235.34999
+  pitch: 17.250013
+money: '9999999849999.0'
+logoutlocation:
+  world: testing
+  x: -26.740936397042134
+  y: 63.0
+  z: 1.7326096263413344
+  yaw: 112.35039
+  pitch: 21.149996
