@@ -5218,3 +5218,9 @@ Caused by: java.lang.ClassNotFoundException: com.earth2me.essentials.metrics.Met
 [14:35:42] [Server thread/INFO]: Ace1Ace4767 issued server command: /co lookup t:1h r:5 a:break
 [14:35:54] [Server thread/INFO]: Ace1Ace4767 issued server command: /co
 [14:35:57] [Server thread/INFO]: Ace1Ace4767 issued server command: /co inspect
+[14:42:58] [Server thread/INFO]: Ace1Ace4767 lost connection: Disconnected
+[14:42:58] [Server thread/INFO]: [WorldResourcepacks] [DEBUG] Not sending message to CraftPlayer{name=Ace1Ace4767} on clearPack as we are not in an environment where we should (key is empty in key.yml)
+[14:42:58] [Server thread/INFO]: Ace1Ace4767 left the game.
+[14:43:00] [Thread-2/INFO]: Stopping server
+[14:43:00] [Thread-2/INFO]: [ItemHover] Disabling ItemHover v1.7
+[14:43:00] [Thread-2/INFO]: [EconomyShopGUI] Disabling EconomyShopGUI v6.11.0

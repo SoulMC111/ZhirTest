@@ -23,3 +23,4 @@
 2025-03-09 14:33:13 [INFO]: [BetterRTP] Database COOLDOWN:battle_world configured and loaded!
 2025-03-09 14:33:13 [INFO]: [BetterRTP] Attempting to queue up some more safe locations...
 2025-03-09 14:33:13 [INFO]: [BetterRTP] Queueing paused, max queue limit reached!
+2025-03-09 14:43:00 [INFO]: [BetterRTP] Disabling BetterRTP v3.6.13

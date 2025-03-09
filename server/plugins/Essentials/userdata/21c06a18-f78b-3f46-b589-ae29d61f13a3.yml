@@ -1,14 +1,14 @@
 money: '9999999899999.99999999996'
 nickname: Ace
 logoutlocation:
-  world: survival
-  x: -9.47715088773631
-  y: 139.0
-  z: 4.300000011920929
-  yaw: -140.09949
-  pitch: 52.34999
+  world: test
+  x: -25.038611784880956
+  y: 90.0
+  z: 38.30000001192093
+  yaw: 92.84839
+  pitch: 66.600136
 timestamps:
-  logout: 1741455021267
+  logout: 1741531378865
   login: 1741528093483
   kits:
     diamond: 1741458276755
