@@ -1,0 +1,12 @@
+location: lifesteal:3.738:148.375:0.224
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&4&lRtp if you dare'
+    height: 0.3
+  actions: {}

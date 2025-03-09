@@ -1,0 +1,12 @@
+command /queueclick:
+    trigger:
+        execute console command "mvcreate br normal"
+        send "&aSending to battle world..." to player
+        wait 20 ticks
+        execute console command "mvtp %player% br"
+
+command /endmatch:
+    trigger:
+        execute console command "mvdelete br"
+        execute console command "mvconfirm"
+        send "deleted" to player

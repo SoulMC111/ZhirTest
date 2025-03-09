@@ -1,0 +1,9 @@
+command /stroll <player > <text>:
+    permission: sk.use
+    trigger:
+        send "<%arg-1%> %arg-2%" to all players
+
+command /stroll2 <player> <text>:
+    permission: sk.use
+    trigger:
+        send "&4&l%arg-1% has a %arg-2% penis!!!"

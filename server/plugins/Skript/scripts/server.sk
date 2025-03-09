@@ -1,0 +1,66 @@
+command /anvil:
+    trigger:
+        set block at player's location to anvil
+
+
+
+command /boom:
+    trigger:
+        set {_range} to 5  # Change this to increase/decrease range
+        set {_player} to player
+        
+        loop all entities in radius {_range} around {_player}:
+            if loop-entity is not {_player}:
+                ignite loop-entity for 5 seconds  # Sets them on fire
+
+command /cc:
+    trigger:
+        loop 300 times:
+            send " " to all players
+        send "&e========[!]========" to all players
+        send "&a  CHAT CLEARED  " to all players
+        send "&e========[!]========" to all players
+
+command /sa:
+    trigger:
+        make player execute "/warp afk"
+
+ 
+command /miku:
+    permission: sk.use
+    trigger:
+        send "&bAND NOW ITS TIME" to all players
+        wait 20 ticks
+        send "&bFOR THE MOMENT YOU'VE BEEN WAITING FOR!" to all players
+        wait 20 ticks
+        send "&bONE!" to all players
+        wait 20 ticks
+        send "&bTWO!" to all players
+        wait 20 ticks
+        send "&bTHREE!!!" to all players
+        wait 15 ticks
+        send "&bREADY?" to all players
+        wait 30 ticks
+        send "&bMIKU MIKU BEAM!!!" to all players
+
+on join:
+    wait 5 ticks
+    send "&1[!]-------------------[!]" to player
+    send "    &bWELCOME TO SOULMC!" to player
+    send "&1[!]-------------------[!]" to player
+
+command /socials:
+    trigger:
+        send "&4&l>>>--Socials--<<<" to player
+        send "&cYT: &fhttps://www.youtube.com/@ItzMeUnreal" to player
+        send "&bDiscord: &fhttps://discord.gg/MSPTRkVYAE" to player
+        send "&4&l>>>--Socials--<<<" to player
+
+command /fc:
+    trigger:
+        set {_fc} to random number between 1 and 2
+        if {_fc} is 1:
+            send "%{_fc}%" to player
+
+every 12000 ticks:
+    send "&b[!] Tip: Join the discord at discord.gg/MSPTRkVYAE" to all players

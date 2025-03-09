@@ -1,0 +1,21 @@
+lastAccountName: ItzMeUnreal
+timestamps:
+  login: 1741457645299
+  logout: 1741457370151
+  lastteleport: 1741457963199
+ipAddress: 0:0:0:0:0:0:0:1
+money: '1'
+logoutlocation:
+  world: survival
+  x: 3.352618861079332
+  y: 140.0
+  z: -5.74723120881313
+  yaw: 56.549614
+  pitch: 5.399999
+lastlocation:
+  world: hub
+  x: -77.83572777065193
+  y: 22.353079258803863
+  z: -4.57543960742594
+  yaw: -46.946533
+  pitch: 28.200066

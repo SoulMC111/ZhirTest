@@ -1,0 +1,32 @@
+# Global settings.
+Global:
+  Notify: true
+  DefaultTime: 5
+  AdminListen: false
+  DefaultReason: None
+  BroadcastNode: mutemanager.listen
+  BlockCommands: false
+  Commands:
+  - /msg
+  - /tell
+  AllowOfflineMute: false
+  Debug: false
+Messages:
+  NoPermission: '&cYou do not have permission to use this command!'
+  ZeroSeconds: 0 seconds
+  Minutes: minutes
+  Seconds: seconds
+  Hours: hours
+  Days: days
+  Years: years
+  Forever: forever
+  UnableToUnMute: '&eUnable to unmute &b%PLAYER%&e.'
+  Reason: '&eReason: &a%REASON%'
+  Duration: '&eDuration: &a%DURATION%'
+  YouHaveBeenMuted: '&eYou have been muted! %DURATIONTEXT% %REASONTEXT%'
+  YouHaveBeenUnMuted: '&eYou have been unmuted!'
+  NoPlayer: There is no player by that name online!
+  PlayerNowMuted: '&b%PLAYER% &eis now muted! %DURATIONTEXT% %REASONTEXT%'
+  PlayerNowUnMuted: '&b%PLAYER% &ehas been unmuted!'
+  YouAreMuted: '&eYou are muted! %DURATIONTEXT% %REASONTEXT%'
+  MaxReason: Mute time of &a%TIME% &rminutes exceeds maximum &a%MAX% &rminutes!

@@ -1,0 +1,21 @@
+lastAccountName: Acetes
+timestamps:
+  login: 1741173913987
+  logout: 1741173965482
+  lastteleport: 1741173923082
+ipAddress: 0:0:0:0:0:0:0:1
+lastlocation:
+  world: battle_world
+  x: -2.1632820266667916
+  y: 72.0
+  z: 0.9644312713837555
+  yaw: 0.0
+  pitch: 0.0
+afk: false
+logoutlocation:
+  world: battle_world
+  x: 0.0
+  y: 72.0
+  z: 0.0
+  yaw: -66.149994
+  pitch: -72.3

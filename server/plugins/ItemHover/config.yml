@@ -1,0 +1,13 @@
+#-----------------------------------------------------#
+#                                                     #
+#					 Item Hover v1.7                  # 
+#                    - By ReckDev -                   #
+#                                                     #
+#-----------------------------------------------------#
+
+#----------------------Do not touch anything below here unless you are editing it--------------------------#
+
+updateCheck: true #Should the plugin auto-check for updates on the Spigot page? 
+messageLayout: '[{NAME}] {MESSAGE}' #Change how the chat format looks when you type [item] or #item
+
+#----------------------------------------------------------------------------------------------------------#

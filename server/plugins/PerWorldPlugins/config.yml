@@ -1,0 +1,73 @@
+# PerWorldPlugins Configuration
+# 
+# Disable or Enable the message of new updates.
+updateChecker: true
+metrics: true
+disabledCommandMessage: '&4[Server]: &f{player} this command is disabled for {world}.'
+blacklist: true
+plugins:
+  Example:
+  - world
+  SimpleTpa:
+  - minigames
+  MuteManager:
+  - :ignore
+  WorldEdit:
+  - :ignore
+  DecentHolograms:
+  - :ignore
+  LoginSecurity:
+  - :ignore
+  SimpleHomes:
+  - minigames
+  - hub
+  SuperVanish:
+  - :ignore
+  ServersNPC:
+  - :ignore
+  ChatColor:
+  - :ignore
+  Multiverse-Core:
+  - :ignore
+  WorldGuard:
+  - :ignore
+  BetterRTP:
+  - hub
+  - minigames
+  freemannlifesteal:
+  - hub
+  - minigames
+  - survival
+  EconomyShopGUI:
+  - hub
+  - minigames
+  Essentials:
+  - :ignore
+  Vault:
+  - :ignore
+  ItemHover:
+  - :ignore
+  ServerQueue:
+  - :ignore
+  LuckPerms:
+  - :ignore
+  Multiverse-Inventories:
+  - :ignore
+  ConditionalCommands:
+  - :ignore
+  Skript:
+  - :ignore
+  WorldResourcepacks:
+  - :ignore
+  skDragon:
+  - :ignore
+  PlaceholderAPI:
+  - :ignore
+  zMenu:
+  - :ignore
+  SMP-Plugin:
+  - :ignore
+  TAB:
+  - :ignore
+  PerWorldInventory:
+  - :ignore

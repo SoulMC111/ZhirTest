@@ -1,0 +1,19 @@
+lastAccountName: Brawl_star_og
+timestamps:
+  login: 1739754883240
+  logout: 1739754901201
+ipAddress: 0:0:0:0:0:0:0:1
+lastlocation:
+  world: hub
+  x: -42.10978500957945
+  y: 6.0
+  z: -24.94595731565037
+  yaw: 258.9
+  pitch: 11.850001
+logoutlocation:
+  world: lifesteal
+  x: -362.35187560105106
+  y: 65.0
+  z: 184.42758038128645
+  yaw: 83.76892
+  pitch: 77.25

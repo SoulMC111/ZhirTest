@@ -1,0 +1,18 @@
+command /test:
+    trigger:
+        send "&aTested" to player
+    
+command /hub:
+    trigger:
+        send "&aSending to hub... (Don't move!)" to player
+        set {waitingToTeleport.%player%} to true
+        wait 2 seconds
+        if {waitingToTeleport.%player%} is true: # Check if they didn't move
+            execute player command "/mvtp hub"
+            delete {waitingToTeleport.%player%} # Clean up variable
+        else:
+            send "&cTeleport canceled! You moved." to player
+
+on move:
+    if {waitingToTeleport.%player%} is set:
+        delete {waitingToTeleport.%player%} # Cancel teleport

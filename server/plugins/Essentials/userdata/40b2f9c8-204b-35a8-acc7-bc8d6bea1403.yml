@@ -1,0 +1,20 @@
+lastAccountName: NotAce
+timestamps:
+  login: 1741169492091
+  lastteleport: 1741165292191
+  logout: 1741169528884
+ipAddress: 0:0:0:0:0:0:0:1
+lastlocation:
+  world: survival
+  x: 2.763200650715297
+  y: 129.0
+  z: -7.596688312789919
+  yaw: 78.29977
+  pitch: 43.19997
+logoutlocation:
+  world: survival
+  x: -8.165206434774914
+  y: 130.0
+  z: 7.031803277330234
+  yaw: 150.00012
+  pitch: 43.64999

@@ -1,0 +1,19 @@
+lastAccountName: VXI
+timestamps:
+  login: 1739742931181
+  logout: 1739743412590
+ipAddress: 0:0:0:0:0:0:0:1
+lastlocation:
+  world: survival
+  x: 11.829575493213879
+  y: 130.24918707874468
+  z: 9.757374191402613
+  yaw: 341.70004
+  pitch: 11.850009
+logoutlocation:
+  world: hub
+  x: -40.13228067007283
+  y: 6.0
+  z: -23.300000011920925
+  yaw: 72.75012
+  pitch: 33.9

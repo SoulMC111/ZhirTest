@@ -1,0 +1,20 @@
+lastAccountName: Edward
+timestamps:
+  login: 1741432364941
+  lastteleport: 1741340630934
+  logout: 1741432477628
+ipAddress: 0:0:0:0:0:0:0:1
+lastlocation:
+  world: survival
+  x: 6.799612723694761
+  y: 129.0
+  z: 5.291436956053333
+  yaw: 332.70013
+  pitch: 16.650063
+logoutlocation:
+  world: survival
+  x: -9.347383158296838
+  y: 129.0
+  z: 4.300000011920929
+  yaw: 83.2502
+  pitch: -4.6499414

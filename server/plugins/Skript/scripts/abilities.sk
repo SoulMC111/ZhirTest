@@ -1,0 +1,180 @@
+command /powers:
+    trigger:
+        give player light blue dye named "&b&lSoul Minions"
+        give player red dye named "&4&lFire Ring"
+        give player orange dye named "&6&lExplosion"
+        give player green dye named "&a&lHealer"
+        delete {cooldown::%player%}
+        delete {cooldownexplode::%player%}
+
+command /manas <number>:
+    trigger:
+        set {mana::%player%} to arg-1
+        send "&bYour mana has been set to: %{mana::%player%}%/100" to player
+
+on join:
+    if {mana::%player%} is not set:
+        set {mana::%player%} to 100  # Default mana when player joins
+
+command /mana:
+    trigger:
+        send "&bYour mana: %{mana::%player%}%/100" to player
+
+command /usemana <number>:
+    trigger:
+        set {_amount} to arg-1
+        if {_amount} is not a number:
+            send "&cPlease enter a valid number!" to player
+            stop
+        if {mana::%player%} < {_amount}:
+            send "&cNot enough mana!" to player
+            stop
+        remove {_amount} from {mana::%player%}
+        send "&bYou used %{_amount}% mana! Remaining: %{mana::%player%}%/100" to player
+
+every 50 tick:
+    loop all players:
+        if {mana::%loop-player%} < 100:
+            add 5 to {mana::%loop-player%}
+            if {mana::%loop-player%} > 100:
+                set {mana::%loop-player%} to 100  # Prevents going above 100
+            send "&a+5 Mana &7(Current: %{mana::%loop-player%}%/100)" to loop-player
+
+# abilities from now on 
+
+on right click:
+    if player is sneaking:
+        if player's tool is red dye named "&4&lFire Ring":
+            if {mana::%player%} > 14:
+                remove 15 from {mana::%player%}
+                send "&bYou used 15 mana! Remaining: %{mana::%player%}%/100" to player
+
+                if {cooldown::%player%} is set:
+                    send "&cYou must wait before using this again!" to player
+                    stop
+                set {cooldown::%player%} to true  # Start cooldown
+            
+                make player execute "/playsound item.fireCharge.use %player% ~ ~ ~ 1 1 1"
+
+                set {_delay} to 100  # Default delay (Change if needed)
+                set {_particles} to 10  # Default particle amount (Change if needed)
+            
+                if {_particles} < 1:
+                    set {_particles} to 1
+
+                set {_y} to y-coord of player
+
+                set {_range} to 3  # Change range if needed
+
+                loop {_delay} times:
+                    # Burn nearby entities (updates every loop, so it works while moving)
+                    loop all entities in radius {_range} around player:
+                        if loop-entity is not player:
+                            ignite loop-entity for 5 seconds  # Sets them on fire
+
+                    set {_y} to y-coord of player
+                    set {_x1} to x-coord of player + 2
+                    set {_z1} to z-coord of player
+
+                    set {_x2} to x-coord of player + 1.5
+                    set {_z2} to z-coord of player + 1.5
+
+                    set {_x3} to x-coord of player
+                    set {_z3} to z-coord of player + 2
+
+                    set {_x4} to x-coord of player - 1.5
+                    set {_z4} to z-coord of player + 1.5
+
+                    set {_x5} to x-coord of player - 2
+                    set {_z5} to z-coord of player
+
+                    set {_x6} to x-coord of player - 1.5
+                    set {_z6} to z-coord of player - 1.5
+
+                    set {_x7} to x-coord of player
+                    set {_z7} to z-coord of player - 2
+
+                    set {_x8} to x-coord of player + 1.5
+                    set {_z8} to z-coord of player - 1.5
+
+                    make player execute "/particle flame %{_x1}% %{_y}% %{_z1}% 0.5 0.5 0.5 0.01 %{_particles}%"
+                    make player execute "/particle flame %{_x2}% %{_y}% %{_z2}% 0.5 0.5 0.5 0.01 %{_particles}%"
+                    make player execute "/particle flame %{_x3}% %{_y}% %{_z3}% 0.5 0.5 0.5 0.01 %{_particles}%"
+                    make player execute "/particle flame %{_x4}% %{_y}% %{_z4}% 0.5 0.5 0.5 0.01 %{_particles}%"
+                    make player execute "/particle flame %{_x5}% %{_y}% %{_z5}% 0.5 0.5 0.5 0.01 %{_particles}%"
+                    make player execute "/particle flame %{_x6}% %{_y}% %{_z6}% 0.5 0.5 0.5 0.01 %{_particles}%"
+                    make player execute "/particle flame %{_x7}% %{_y}% %{_z7}% 0.5 0.5 0.5 0.01 %{_particles}%"
+                    make player execute "/particle flame %{_x8}% %{_y}% %{_z8}% 0.5 0.5 0.5 0.01 %{_particles}%"
+                
+                    wait 1 tick
+
+                wait 5 ticks
+                make player execute "/playsound dig.gravel %player% ~ ~ ~ 1 1 1"
+
+                wait 5 seconds  # Cooldown time (Change if needed)
+                delete {cooldown::%player%}  # Remove cooldown
+                send "&aYou can activate &4Fire Ring &aagain!" to player
+            else:
+                send "&cNot enough mana!" to player
+
+
+
+
+on right click:
+    if player is sneaking:
+        if player's tool is light blue dye named "&b&lSoul Minions":
+            loop 3 times:
+                set {_wolf} to last spawned entity
+                set {_x} to x-coord of player
+                set {_y} to y-coord of player
+                set {_z} to z-coord of player
+                make player execute "/summon Wolf %{_x}% %{_y}% %{_z}% {Owner:%player's name%}"
+                set name of last spawned entity to "%player%'s wolf"
+            send "&bSummoned 3 minion!" to player
+
+
+
+on right click:
+    if player is sneaking:
+        if player's tool is orange dye named "&6&lExplosion":
+            if {mana::%player%} > 24:
+                remove 25 from {mana::%player%}
+                send "&bYou used 25 mana! Remaining: %{mana::%player%}%/100" to player
+
+                if {cooldownexplode::%player%} is set:
+                    send "&cYou must wait before using this again!" to player
+                    stop
+                set {cooldownexplode::%player%} to true  # Start cooldown
+            
+                set {no-explosion-damage::%player%} to true  # Mark player as immune
+            
+                create explosion of force 3 at player's location
+                send "&6Kaboom!" to player
+            
+                wait 3 ticks  # Short delay to prevent damage
+                delete {no-explosion-damage::%player%}  # Remove immunity
+            
+                wait 3 seconds  # Cooldown time
+                delete {cooldownexplode::%player%}  # Remove cooldown
+                send "&aYou can use &6Explosion &aagain!" to player
+            else:
+                send "&cNot enough mana!" to player
+
+on damage:
+    if {no-explosion-damage::%victim%} is set:
+        cancel event  # Prevent damage
+
+
+on right click:
+    if player is sneaking:
+        if player's tool is green dye named "&a&lHealer":
+            if {mana::%player%} > 49:
+                remove 50 from {mana::%player%}
+                send "&bYou used 50 mana! Remaining: %{mana::%player%}%/100" to player
+                set player's max health to 15
+                set player's health to 15
+                set player's hunger to 20
+                wait 125 ticks
+                set player's max health to 10
+            else:
+                send "&cNot enough mana!" to player
